@@ -8,7 +8,7 @@ public class Machine {
 	private int location = 0;
 
 	public Machine() {
-		memory = new Memory(32); //FIXME
+		memory = new Memory();
 		iset = new InstructionSet();
 	}
 

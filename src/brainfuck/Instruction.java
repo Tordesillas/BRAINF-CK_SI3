@@ -6,9 +6,9 @@ import brainfuck.virtualmachine.OverflowException;
 public abstract class Instruction {
 	private String name;
 	private char symbol;
-	private String color;
+	private int[] color;
 
-	public Instruction(String name, char symbol, String color) {
+	public Instruction(String name, char symbol, int[] color) {
 		this.name = name;
 		this.symbol = symbol;
 		this.color = color;
@@ -22,7 +22,7 @@ public abstract class Instruction {
 		return symbol;
 	}
 
-	public String getColor() {
+	public int[] getColor() {
 		return color;
 	}
 
