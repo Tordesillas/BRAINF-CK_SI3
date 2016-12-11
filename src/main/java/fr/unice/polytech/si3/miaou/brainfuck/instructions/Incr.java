@@ -17,7 +17,7 @@ public class Incr extends WriteMemory {
 	 * Constructs the Incr instruction.
 	 */
 	public Incr() {
-		super("INCR", '+', 0xFFFFFFFF, "memory[i]++");
+		super("INCR", '+', 0xFFFFFFFF);
 	}
 
 	/**
