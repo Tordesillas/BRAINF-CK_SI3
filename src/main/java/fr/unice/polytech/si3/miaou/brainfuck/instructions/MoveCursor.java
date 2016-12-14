@@ -15,9 +15,10 @@ public class MoveCursor extends Instruction {
 	 * @param name		Instruction's keyword.
 	 * @param symbol	Instruction's symbol.
 	 * @param color		Instruction's color as an int.
+	 * @param code		Instruction's code.
 	 */
-	public MoveCursor(String name, char symbol, int color) {
-		super(name, symbol, color);
+	public MoveCursor(String name, char symbol, int color, String code) {
+		super(name, symbol, color, code);
 	}
 
 	/**
@@ -28,6 +29,6 @@ public class MoveCursor extends Instruction {
 	 */
 	@Override
 	public void accept(Machine machine) {
-                Metrics.DATA_MOVE.incr();
+        Metrics.DATA_MOVE.incr();
 	}
 }
